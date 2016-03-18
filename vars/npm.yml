@@ -1,0 +1,11 @@
+---
+npm_packages:
+# - name: package_name
+#   version: 1.2.3
+#   state: present / absent
+  - name: coffee-script
+    version: 1.9.3
+  - name: less
+    version: 1.7.3
+  - name: scss
+    version: 0.2.4

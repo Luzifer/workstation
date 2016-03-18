@@ -1,0 +1,11 @@
+---
+
+- name: Install (user) global NPM packages
+  npm:
+    path: "{{ ansible_env.HOME }}/.global_node"
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    version: "{{ item.version }}"
+    production: yes
+    global: yes
+  with_items: "{{ npm_packages }}"

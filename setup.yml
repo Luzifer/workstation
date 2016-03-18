@@ -3,6 +3,7 @@
 
   vars_files:
     - vars/brew.yml
+    - vars/npm.yml
 
   tasks:
     - include: tasks/config.yml
@@ -13,3 +14,6 @@
 
     - include: tasks/fonts.yml
       tags: fonts
+
+    - include: tasks/npm.yml
+      tags: npm
