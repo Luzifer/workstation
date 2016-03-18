@@ -1,0 +1,33 @@
+---
+
+#- name: Checkout configuration repo
+#  git:
+#    dest: "{{ ansible_env.HOME }}/config"
+#    repo: ssh://git@bitbucket.org/luzifer/configs.git
+#    accept_hostkey: true
+#    key_file: "{{ ansible_env.HOME }}/.ssh/luzifer-jenkins"
+
+- name: Ensure .config directory
+  file:
+    state: directory
+    dest: "{{ ansible_env.HOME }}/.config"
+
+- name: Link configuration files
+  file:
+    force: true
+    src: "{{ ansible_env.HOME }}/config/{{ item.src }}"
+    dest: "{{ ansible_env.HOME }}/{{ item.dest }}"
+    state: "{{ item.state | default('link') }}"
+  with_items:
+    - { src: "bashrc", dest: ".bashrc" }
+    - { src: "gitconfig", dest: ".gitconfig" }
+    - { src: "gitignore_global", dest: ".gitignore_global" }
+    - { src: "htoprc", dest: ".htoprc" }
+    - { src: "irssi", dest: ".irssi" }
+    - { src: "s3cfg", dest: ".s3cfg", state: absent }
+    - { src: "screenrc", dest: ".screenrc" }
+    - { src: "vim", dest: ".vim" }
+    - { src: "rspec", dest: ".rspec" }
+    - { src: "bin", dest: "bin" }
+    - { src: "vim/vimrc", dest: ".vimrc" }
+    - { src: "awsenv", dest: ".config/awsenv" }

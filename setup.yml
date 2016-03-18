@@ -1,0 +1,15 @@
+---
+- hosts: all
+
+  vars_files:
+    - vars/brew.yml
+
+  tasks:
+    - include: tasks/config.yml
+      tags: config
+
+    - include: tasks/brew.yml
+      tags: brew
+
+    - include: tasks/fonts.yml
+      tags: fonts

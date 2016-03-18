@@ -1,0 +1,22 @@
+---
+
+- name: Install brew taps
+  homebrew_tap:
+    tap: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+  with_items: "{{ homebrew_taps }}"
+
+- name: Update brew
+  homebrew:
+    update_homebrew: yes
+
+- name: Install / uninstall brew packages
+  homebrew:
+    name: "{{ item.name }}"
+    install_options: "{{ item.opts | default('') }}"
+    state: "{{ item.state | default('present') }}"
+  with_items: "{{ homebrew_packages }}"
+
+- name: Upgrade brew packages
+  homebrew:
+    upgrade_all: yes

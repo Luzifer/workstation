@@ -1,0 +1,13 @@
+---
+
+- name: Install patched Droid Sans Mono
+  get_url:
+    url: https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete%20Mono.otf
+    dest: "{{ ansible_env.HOME }}/Library/Fonts/DroidSansMonoPatched.otf"
+    checksum: sha256:172d036d620c74b57006e51b00fe13a10b628b79bd780ab33366c92b197d4407
+
+- name: Install FontAwesome font
+  get_url:
+    url: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf
+    dest: "{{ ansible_env.HOME }}/Library/Fonts/fontawesome-webfont.ttf"
+    checksum: sha256:7b5a4320fba0d4c8f79327645b4b9cc875a2ec617a557e849b813918eb733499
