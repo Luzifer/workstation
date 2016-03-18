@@ -22,73 +22,59 @@ homebrew_packages:
   - name: ansible
   - name: homebrew/dupes/apple-gcc42
   - name: asciinema
-  - name: auto-scaling
-  - name: aws-cfn-tools
   - name: awscli
   - name: luzifer/tools/awsenv
   - name: bash
   - name: bash-completion
   - name: bazaar
-  - name: boost
-  - name: bsdiff
-  - name: c-ares
+  - name: bsdmake
   - name: clamav
   - name: colordiff
-  - name: cowsay
   - name: ctags
   - name: curl
-  - name: d-bus
   - name: ddrescue
   - name: luzifer/tools/diary
   - name: docker
   - name: docker-machine
   - name: faac
   - name: ffmpeg
+  - name: flac
   - name: fortune
   - name: geoip
   - name: ghostscript
   - name: git
   - name: git-extras
   - name: glide
-  - name: gnu-getopt
   - name: gnupg
-  - name: gnutls
+  - name: gnupg2
+  - name: go
   - name: luzifer/tools/gobuilder-cli
   - name: yudai/gotty/gotty
+  - name: gpg-agent
   - name: gpm
   - name: graphviz
-  - name: hidapi
   - name: htop-osx
   - name: hub
-  - name: icu4c
   - name: id3lib
   - name: iftop
   - name: imagemagick
-  - name: intltool
   - name: ipcalc
   - name: irssi
-  - name: jansson
-  - name: jbig2dec
   - name: jq
   - name: keybase
+  - name: lame
   - name: libdvdcss
-  - name: libmemcached
-  - name: librsync
-  - name: libsamplerate
-  - name: libsndfile
-  - name: libvo-aacenc
   - name: luzifer/tools/license
   - name: lua
   - name: homebrew/dupes/m4
   - name: macvim
+  - name: memcached
   - name: mercurial
   - name: mobile-shell
-  - name: moreutils
   - name: mtr
   - name: ngrok
   - name: nmap
   - name: node
-  - name: homebrew/boneyard/p11-kit
   - name: p7zip
   - name: packer
   - name: luzifer/tools/password
@@ -97,17 +83,15 @@ homebrew_packages:
   - name: python
   - name: python3
   - name: reattach-to-user-namespace
-  - name: rlog
   - name: ruby
   - name: speedtest_cli
+  - name: sqlite
   - name: ssh-copy-id
   - name: streamripper
   - name: the_silver_searcher
   - name: tmux
   - name: tree
-  - name: unixodbc
   - name: unrar
-  - name: nwoolls/xgminer/uthash
   - name: vault
   - name: wakeonlan
   - name: watch
