@@ -3,6 +3,7 @@
 
   vars_files:
     - vars/brew.yml
+    - vars/fonts.yml
     - vars/npm.yml
 
   tasks:

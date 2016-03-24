@@ -3,7 +3,7 @@
 #- name: Checkout configuration repo
 #  git:
 #    dest: "{{ ansible_env.HOME }}/config"
-#    repo: ssh://git@bitbucket.org/luzifer/configs.git
+#    repo: git@gitlab.com:luzifer/configs.git
 #    accept_hostkey: true
 #    key_file: "{{ ansible_env.HOME }}/.ssh/luzifer-jenkins"
 
