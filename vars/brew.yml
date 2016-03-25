@@ -59,7 +59,6 @@ homebrew_packages:
   - name: iftop
   - name: imagemagick
   - name: ipcalc
-  - name: irssi
   - name: jq
   - name: keybase
   - name: lame
