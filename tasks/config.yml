@@ -30,4 +30,3 @@
     - { src: "rspec", dest: ".rspec" }
     - { src: "bin", dest: "bin" }
     - { src: "vim/vimrc", dest: ".vimrc" }
-    - { src: "awsenv", dest: ".config/awsenv" }
