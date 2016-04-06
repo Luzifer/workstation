@@ -25,7 +25,6 @@ homebrew_packages:
   - name: awscli
   - name: luzifer/tools/awsenv
   - name: bash
-  - name: bash-completion
   - name: bazaar
   - name: bsdmake
   - name: clamav
