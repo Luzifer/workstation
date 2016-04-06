@@ -47,6 +47,7 @@ homebrew_packages:
   - name: gnupg
   - name: gnupg2
   - name: go
+  - name: gpgme
   - name: luzifer/tools/gobuilder-cli
   - name: yudai/gotty/gotty
   - name: gpg-agent
@@ -70,6 +71,8 @@ homebrew_packages:
   - name: mercurial
   - name: mobile-shell
   - name: mtr
+  - name: mutt
+    opts: --with-gpgme
   - name: ngrok
   - name: nmap
   - name: node
