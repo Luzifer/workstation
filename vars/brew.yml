@@ -91,6 +91,7 @@ homebrew_packages:
   - name: sqlite
   - name: ssh-copy-id
   - name: streamripper
+  - name: terraform
   - name: the_silver_searcher
   - name: tmux
   - name: tree
