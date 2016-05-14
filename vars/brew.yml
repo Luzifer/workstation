@@ -8,11 +8,9 @@ homebrew_taps:
   - name: homebrew/dupes 
   - name: homebrew/fuse 
   - name: homebrew/versions 
-  - name: jimdo/wonderland 
+  - name: Jimdo/wonderland 
   - name: jingweno/gh 
-  - name: josegonzalez/php 
   - name: luzifer/tools 
-  - name: nwoolls/xgminer 
   - name: yudai/gotty 
 
 homebrew_packages:
@@ -104,3 +102,44 @@ homebrew_packages:
   - name: wrk
   - name: homebrew/dupes/zlib
   - name: zsh
+  - name: supervisor
+  - name: lastpass-cli
+
+homebrew_cask_packages:
+  - name: adobe-creative-cloud
+  - name: alfred
+  - name: bartender
+  - name: bitbar
+  - name: blink1control
+  - name: caffeine
+  - name: charles
+  - name: cloud
+  - name: daisydisk
+  - name: dropbox
+  - name: firefox
+  - name: fitbit-connect
+  - name: franz
+  - name: fromscratch
+  - name: garmin-basecamp
+  - name: handbrake
+  - name: imageoptim
+  - name: keyboard-cleaner
+  - name: macupdate-desktop
+  - name: mixxx
+  - name: mou
+  - name: musicbrainz-picard
+  - name: rdm
+  - name: skitch
+  - name: skyfonts
+  - name: steam
+  - name: teamspeak-client
+  - name: teamviewer
+  - name: tftpserver
+  - name: toggldesktop
+  - name: tunnelblick
+  - name: virtualbox
+  - name: virtualbox-extension-pack
+  - name: vlc
+  - name: watts
+  - name: yate
+
