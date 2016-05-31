@@ -26,6 +26,7 @@ homebrew_packages:
   - name: bazaar
   - name: bsdmake
   - name: clamav
+  - name: cmake
   - name: colordiff
   - name: ctags
   - name: curl
@@ -65,6 +66,7 @@ homebrew_packages:
   - name: lua
   - name: homebrew/dupes/m4
   - name: macvim
+    opts: --with-cscope --with-lua
   - name: memcached
   - name: mercurial
   - name: mobile-shell
@@ -89,7 +91,6 @@ homebrew_packages:
   - name: sqlite
   - name: ssh-copy-id
   - name: streamripper
-  - name: terraform
   - name: the_silver_searcher
   - name: tmux
   - name: tree
@@ -118,24 +119,20 @@ homebrew_cask_packages:
   - name: dropbox
   - name: firefox
   - name: fitbit-connect
-  - name: franz
   - name: fromscratch
   - name: garmin-basecamp
   - name: handbrake
   - name: imageoptim
   - name: keyboard-cleaner
   - name: macupdate-desktop
-  - name: mixxx
-  - name: mou
   - name: musicbrainz-picard
+  - name: obs
   - name: rdm
   - name: skitch
   - name: skyfonts
   - name: steam
   - name: teamspeak-client
   - name: teamviewer
-  - name: tftpserver
-  - name: toggldesktop
   - name: tunnelblick
   - name: virtualbox
   - name: virtualbox-extension-pack
