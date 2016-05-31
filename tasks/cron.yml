@@ -1,0 +1,57 @@
+---
+
+- name: Set SHELL
+  cron:
+    name: SHELL
+    value: /bin/bash
+    env: true
+
+- name: Set PATH
+  cron:
+    name: PATH
+    value: /Users/luzifer/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luzifer/development/ipfs/bin:/Users/luzifer/git_own/go/bin:/Users/luzifer/git_wonderland/go/bin:/Users/luzifer/gocode/bin
+    env: true
+
+- name: Setup cron to clean ~/Downloads
+  cron:
+    name: clean downloads
+    special_time: hourly
+    job: cleanup_directories
+
+- name: Setup remote backups
+  cron:
+    name: remote backup
+    minute: 12
+    hour: 2
+    job: duplicity-backup backup
+
+- name: Clean up local docker installation
+  cron:
+    name: cleanup docker
+    special_time: hourly
+    job: docker-clean
+
+- name: Update virus definitions
+  cron:
+    name: freshclam
+    minute: 30
+    hour: "*/4"
+    job: freshclam
+
+- name: Refresh godir listing
+  cron:
+    name: godirs
+    special_time: hourly
+    job: zsh-refresh-godirs
+
+- name: Cleanup ipfs repo
+  cron:
+    name: ipfs gc
+    special_time: hourly
+    job: ipfs repo gc
+
+- name: Upgrade wl
+  cron:
+    name: wl upgrade
+    special_time: hourly
+    job: wl upgrade
