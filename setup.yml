@@ -21,3 +21,6 @@
 
     - include: tasks/cron.yml
       tags: cron
+
+    - include: tasks/ngrok.yml
+      tags: ngrok

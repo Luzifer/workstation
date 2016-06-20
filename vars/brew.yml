@@ -73,7 +73,6 @@ homebrew_packages:
   - name: mtr
   - name: mutt
     opts: --with-gpgme
-  - name: ngrok
   - name: nmap
   - name: node
   - name: p7zip
