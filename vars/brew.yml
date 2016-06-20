@@ -11,6 +11,7 @@ homebrew_taps:
   - name: Jimdo/wonderland 
   - name: jingweno/gh 
   - name: luzifer/tools 
+  - name: mlafeldt/formulas
   - name: yudai/gotty 
 
 homebrew_packages:
@@ -25,6 +26,7 @@ homebrew_packages:
   - name: bash
   - name: bazaar
   - name: bsdmake
+  - name: chaosmonkey
   - name: clamav
   - name: cmake
   - name: colordiff
