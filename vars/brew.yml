@@ -33,18 +33,14 @@ homebrew_packages:
   - name: ctags
   - name: curl
   - name: ddrescue
-  - name: luzifer/tools/diary
   - name: docker
-  - name: docker-machine
   - name: faac
   - name: ffmpeg
   - name: flac
-  - name: fortune
   - name: geoip
   - name: ghostscript
   - name: git
   - name: git-extras
-  - name: glide
   - name: gnupg
   - name: gnupg2
   - name: go
@@ -57,9 +53,7 @@ homebrew_packages:
   - name: htop-osx
   - name: hub
   - name: id3lib
-  - name: iftop
   - name: imagemagick
-  - name: ipcalc
   - name: jq
   - name: keybase
   - name: lame
@@ -69,7 +63,6 @@ homebrew_packages:
   - name: homebrew/dupes/m4
   - name: macvim
     opts: --with-cscope --with-lua
-  - name: memcached
   - name: mercurial
   - name: mobile-shell
   - name: mtr
@@ -79,7 +72,6 @@ homebrew_packages:
   - name: node
   - name: p7zip
   - name: packer
-  - name: pam_yubico
   - name: luzifer/tools/password
   - name: phantomjs
   - name: pstree
@@ -97,7 +89,6 @@ homebrew_packages:
   - name: tree
   - name: unrar
   - name: vault
-  - name: wakeonlan
   - name: watch
   - name: wget
   - name: jimdo/wonderland/wl
@@ -112,14 +103,12 @@ homebrew_cask_packages:
   - name: alfred
   - name: bartender
   - name: bitbar
-  - name: blink1control
   - name: caffeine
   - name: charles
   - name: cloud
   - name: daisydisk
   - name: dropbox
   - name: firefox
-  - name: fitbit-connect
   - name: fromscratch
   - name: garmin-basecamp
   - name: handbrake
@@ -135,6 +124,7 @@ homebrew_cask_packages:
   - name: teamspeak-client
   - name: teamviewer
   - name: tunnelblick
+  - name: vagrant
   - name: virtualbox
   - name: virtualbox-extension-pack
   - name: vlc
